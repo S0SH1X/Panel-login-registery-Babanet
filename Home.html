@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>بابانت · محیط کاربری</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body class="home">
+        <div class="motif"></div>
+
+        <!-- ── header ────────────────────────────────────── -->
+        <header class="app-header">
+            <div class="app-header-inner">
+                <a href="home.html" class="app-brand">
+                    <span class="app-brand-dot"></span>
+                    <span class="app-brand-name">بابانت</span>
+                </a>
+
+                <nav class="app-nav" id="mainNav">
+                    <a href="#" class="app-nav-link active">خانه</a>
+                    <a href="#" class="app-nav-link">بازی‌های زنده</a>
+                    <a href="#" class="app-nav-link">پیش‌بینی</a>
+                    <a href="#" class="app-nav-link">رتبه‌بندی</a>
+                    <a href="#" class="app-nav-link">پشتیبانی</a>
+                </nav>
+
+                <div class="app-header-actions">
+                    <button class="account-btn" id="accountBtn">
+                        <span class="account-avatar">ک</span>
+                        <span class="account-name">حساب کاربری</span>
+                    </button>
+                    <button
+                        class="nav-toggle"
+                        id="navToggle"
+                        aria-label="منو"
+                        aria-expanded="false"
+                    >
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ── main ──────────────────────────────────────── -->
+        <main class="app-main">
+            <!-- خوش‌آمد -->
+            <section class="welcome-bar">
+                <div>
+                    <h1 class="welcome-title">خوش آمدید 👋</h1>
+                    <p class="welcome-sub">
+                        آخرین وضعیت رتبه‌بندی و بازی‌های پیش رو را اینجا دنبال
+                        کنید.
+                    </p>
+                </div>
+                <div class="welcome-stats">
+                    <div class="wstat">
+                        <span class="wstat-num">۱۲</span>
+                        <span class="wstat-label">بازی امروز</span>
+                    </div>
+                    <div class="wstat">
+                        <span class="wstat-num">#۴۲</span>
+                        <span class="wstat-label">رتبه شما</span>
+                    </div>
+                    <div class="wstat">
+                        <span class="wstat-num">۸۵۰</span>
+                        <span class="wstat-label">امتیاز</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="app-grid">
+                <!-- جدول رتبه‌بندی -->
+                <section class="panel">
+                    <div class="panel-head">
+                        <h2 class="panel-title">جدول رتبه‌بندی</h2>
+                        <a href="#" class="panel-link">مشاهده کامل</a>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table class="rank-table">
+                            <thead>
+                                <tr>
+                                    <th>رتبه</th>
+                                    <th>کاربر</th>
+                                    <th>بازی‌ها</th>
+                                    <th>امتیاز</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="rank rank-1">۱</span></td>
+                                    <td>آرش رضایی</td>
+                                    <td>۴۸</td>
+                                    <td class="pts">۲٬۴۱۰</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="rank rank-2">۲</span></td>
+                                    <td>سارا محمدی</td>
+                                    <td>۴۵</td>
+                                    <td class="pts">۲٬۱۸۰</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="rank rank-3">۳</span></td>
+                                    <td>مهدی کریمی</td>
+                                    <td>۴۱</td>
+                                    <td class="pts">۱٬۹۹۵</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="rank">۴</span></td>
+                                    <td>نگار احمدی</td>
+                                    <td>۳۹</td>
+                                    <td class="pts">۱٬۸۷۰</td>
+                                </tr>
+                                <tr class="me-row">
+                                    <td><span class="rank">۴۲</span></td>
+                                    <td>شما</td>
+                                    <td>۱۲</td>
+                                    <td class="pts">۸۵۰</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- بازی‌های پیش رو -->
+                <section class="panel">
+                    <div class="panel-head">
+                        <h2 class="panel-title">بازی‌های پیش رو</h2>
+                        <a href="#" class="panel-link">همه بازی‌ها</a>
+                    </div>
+
+                    <ul class="match-list">
+                        <li class="match-card">
+                            <div class="match-meta">
+                                <span class="match-league">لیگ برتر</span>
+                                <span class="match-time">امروز · ۲۰:۳۰</span>
+                            </div>
+                            <div class="match-teams">
+                                <span class="team">پرسپولیس</span>
+                                <span class="vs">–</span>
+                                <span class="team">استقلال</span>
+                            </div>
+                            <button class="match-btn">پیش‌بینی</button>
+                        </li>
+                        <li class="match-card">
+                            <div class="match-meta">
+                                <span class="match-league">لالیگا</span>
+                                <span class="match-time">فردا · ۲۳:۰۰</span>
+                            </div>
+                            <div class="match-teams">
+                                <span class="team">رئال مادرید</span>
+                                <span class="vs">–</span>
+                                <span class="team">بارسلونا</span>
+                            </div>
+                            <button class="match-btn">پیش‌بینی</button>
+                        </li>
+                        <li class="match-card">
+                            <div class="match-meta">
+                                <span class="match-league">لیگ قهرمانان</span>
+                                <span class="match-time">پنجشنبه · ۲۳:۴۵</span>
+                            </div>
+                            <div class="match-teams">
+                                <span class="team">منچسترسیتی</span>
+                                <span class="vs">–</span>
+                                <span class="team">بایرن مونیخ</span>
+                            </div>
+                            <button class="match-btn">پیش‌بینی</button>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p class="legal-note">
+                 شرط‌بندی مسئولانه · تمام حقوق برای بابانت محفوظ است
+            </p>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="main.css" />
-        <title>بابانت | خانه</title>
+        <title>بابانت | ورود</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
@@ -72,10 +72,10 @@
                 </div>
 
                 <div>
-                    <h1>همهٔ بازارهای فوتبال، زیر یک سقف</h1>
+                    <h1>خوش برگشتی</h1>
                     <p>
-                        ضرایب لحظه‌ای، پوشش زندهٔ مسابقات و تجربه‌ای روان روی هر
-                        دستگاه.
+                        وارد حساب خود شو و به ضرایب لحظه‌ای فوتبال دسترسی داشته
+                        باش.
                     </p>
                 </div>
 
@@ -86,29 +86,61 @@
                 </div>
             </div>
 
-            <div class="form-side landing">
-                <div class="landing-inner">
-                    <h2>به بابانت خوش آمدید</h2>
-                    <p class="sub">
-                        برای دیدن ضرایب لحظه‌ای، وارد حساب خود شوید یا یک حساب
-                        جدید بسازید.
-                    </p>
+            <div class="form-side">
+                <a class="back-link" href="index.html">→ بازگشت به خانه</a>
 
-                    <div class="landing-cta">
-                        <a class="btn-primary" href="login.html"
-                            >ورود به حساب</a
+                <h2>ورود به حساب</h2>
+                <p class="sub">برای ادامه وارد حساب کاربری بابانت خود شوید</p>
+
+                <form id="loginForm" novalidate>
+                    <div class="field">
+                        <label for="loginIdentifier"
+                            >ایمیل یا شماره موبایل</label
                         >
-                        <a class="btn-secondary" href="register.html"
-                            >ساخت حساب جدید</a
-                        >
+                        <input
+                            type="text"
+                            id="loginIdentifier"
+                            name="identifier"
+                            placeholder="مثال: example@mail.com"
+                        />
+                        <div class="error-msg" id="err-regFirstName"></div>
                     </div>
 
-                    <ul class="feature-list">
-                        <li>ضرایب زنده و به‌روز</li>
-                        <li>پوشش لیگ‌های داخلی و اروپایی</li>
-                        <li>پشتیبانی شبانه‌روزی</li>
-                    </ul>
-                </div>
+                    <div class="field">
+                        <label for="loginPassword">رمز عبور</label>
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="password"
+                            placeholder="رمز عبور خود را وارد کنید"
+                        />
+                        <div class="error-msg" id="err-regFirstName"></div>
+                    </div>
+
+                    <div class="aux-row">
+                        <label class="checkbox">
+                            <input
+                                type="checkbox"
+                                id="loginRemember"
+                                name="remember"
+                            />
+                            <div class="error-msg" id="err-regFirstName"></div>
+                            مرا به خاطر بسپار
+                        </label>
+                        <a href="#">فراموشی رمز عبور؟</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        ورود به حساب
+                    </button>
+                </form>
+
+                <div class="divider">یا</div>
+
+                <p class="switch-line">
+                    حساب کاربری ندارید؟
+                    <a href="register.html">ثبت‌نام کنید</a>
+                </p>
             </div>
         </div>
 
@@ -119,4 +151,3 @@
         <script src="main.js"></script>
     </body>
 </html>
-ّ
